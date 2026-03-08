@@ -4,23 +4,22 @@ import { Link } from "react-router-dom";
 
 const MainHeader = () => {
     return (
-        <header className="w-full bg-white shadow-sm border-b">
+        <header className="w-full bg-gray-100 border-b">
             <div className="max-w-7xl mx-auto px-6">
 
-                {/* Single Row */}
-                <div className="flex items-center justify-between h-20">
+                <div className="flex items-center justify-between h-22.5">
 
                     {/* Logo */}
                     <Link to="/" className="flex items-center">
                         <img
                             src="https://7oroofthemes.com/agritec/wp-content/themes/agritec/assets/images/logo/logo.png"
                             alt="Agritec"
-                            className="h-10 w-auto"
+                            className="h-12"
                         />
                     </Link>
 
-                    {/* Center Menu */}
-                    <div className="hidden lg:flex">
+                    {/* Center Navigation */}
+                    <div className="hidden lg:flex flex-1 justify-center">
                         <Navbar />
                     </div>
 
