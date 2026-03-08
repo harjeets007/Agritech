@@ -6,8 +6,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
-import { Mail, MapPin, Star } from "lucide-react";
-import { Play, Leaf, Sprout } from "lucide-react";
+import { Mail, MapPin, Star, Play, Leaf, Sprout, Zap } from "lucide-react";
 
 
 
@@ -29,17 +28,18 @@ const Home = () => {
     return (
         <>
             {/* PreviewHeader  */}
-            <div className="w-full bg-gray-900 text-white px-6 py-3 flex items-center justify-between">
+            <div className="w-full h-13.5 bg-[#262626] text-white px-6 py-3 flex items-center justify-between">
 
                 {/* Left Side - Logo */}
-                <div>
+                <div className='flex justify-center items-center gap-0.5'>
+                    <Zap size={18} className="text-green-500 font-bold  " />
                     <a
                         href="https://themeforest.net/item/agritec-agriculture-organic-farm-wordpress-theme/60021841"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-lg font-semibold hover:text-green-400 transition-colors duration-300"
+                        className="text-lg hover:text-green-400 transition-colors duration-300 py-18 font-mono"
                     >
-                        Envato Market
+                        envatomarket
                     </a>
                 </div>
 
@@ -49,9 +49,9 @@ const Home = () => {
                         href="https://themeforest.net/checkout/from_item/60021841?license=regular&support=bundle_6month"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-md shadow-md transition-all duration-300 hover:scale-105"
+                        className="inline-block px-4 py-1.5 bg-[#82b440] text-white text-[14px] rounded-sm shadow-[0px_2px_0px_#6f9a37]"
                     >
-                        Buy Now
+                        Buy now
                     </a>
                 </div>
 

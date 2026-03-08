@@ -1,24 +1,28 @@
 // Header.jsx
 import React from 'react';
+import { Mail } from 'lucide-react';
 
 const Header = () => {
 
   return (
-   <div className="w-full bg-[#1f3b2c] text-white text-sm py-2">
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center px-4">
+    <div className='bg-[#083b1a] w-full p-3'>
 
-        {/* LEFT SIDE */}
-        <div className="flex flex-wrap items-center gap-x-6 gap-y-2 justify-center lg:justify-start">
+      <div className='flex justify-between items-cente'>
+        {/* Left side */}
+        <div className='flex justify-center items-center gap-2 px-6'>
 
           {/* Email */}
           <a
             href="mailto:Agritec@7oroof.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 hover:text-green-400 transition"
+            className="flex items-center gap-2.5 text-white hover:text-green-400 transition"
           >
-            <span className="hidden md:inline">Email:</span>
-            <span>Agritec@7oroof.com</span>
+            <Mail />
+            <span className="flex gap-1">
+              <span className="hidden md:inline">Email:</span>
+              <span>Agritec@7oroof.com</span>
+            </span>
           </a>
 
           {/* Phone */}
@@ -39,9 +43,10 @@ const Header = () => {
           >
             <span>2307 Brooklyn, New York 11226</span>
           </a>
+
         </div>
 
-        {/* RIGHT SIDE */}
+        {/*Right side */}
         <div className="hidden lg:flex items-center gap-6 mt-2 lg:mt-0">
 
           {/* Menu */}
